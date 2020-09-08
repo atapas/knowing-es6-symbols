@@ -132,10 +132,10 @@ appDiv.innerHTML = `<h1>ES6 Symbols: See the output in cosnole</h1>`;
 console.log(Symbol('aSymbol') === Symbol('aSymbol'));
 console.log(Symbol.for('aSymbol') === Symbol.for('aSymbol'));
 
-let globalASymbolSym = Symbol.for('aSymbol');
-let localASymbolSym = Symbol('aSymbol');
-console.log(Symbol.keyFor(globalASymbolSym));
-console.log(Symbol.keyFor(localASymbolSym));
+let globalASymbol = Symbol.for('aSymbol');
+let localASymbol = Symbol('aSymbol');
+console.log(Symbol.keyFor(globalASymbol));
+console.log(Symbol.keyFor(localASymbol));
 
 
 
