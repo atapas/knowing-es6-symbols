@@ -128,6 +128,16 @@ appDiv.innerHTML = `<h1>ES6 Symbols: See the output in cosnole</h1>`;
   console.log(obj[wrap]);
 }
 
+// Symbol from the global registry
+console.log(Symbol('aSymbol') === Symbol('aSymbol'));
+console.log(Symbol.for('aSymbol') === Symbol.for('aSymbol'));
+
+let globalASymbolSym = Symbol.for('aSymbol');
+let localASymbolSym = Symbol('aSymbol');
+console.log(Symbol.keyFor(globalASymbolSym));
+console.log(Symbol.keyFor(localASymbolSym));
+
+
 
 
 
